@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar-desktop">
+        <div class="logo-triangulo-container">
+            <div class="logo-shield">
+                <div class="paw-icon">
+                    <div class="toe toe-1"></div>
+                    <div class="toe toe-2"></div>
+                    <div class="toe toe-3"></div>
+                    <div class="toe toe-4"></div>
+                    <div class="paw-pad"></div>
+                </div>
+            </div>
+            <div class="logo-text-box">
+                <span class="brand-name">Pet<strong class="dark-blue">Alerta</strong></span>
+                <span class="brand-sub">Rede de Proteção</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#" class="nav-item active">Ver Animais</a>
+            <a href="#" class="nav-item">Anunciar Pet</a>
+        </nav>
+    </header>
+
+    <header class="navbar-mobile-antiga">
+        <button class="mobile-menu-btn" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="mobile-logo">
+            <span class="brand-name-mobile">Pet<strong>Alerta</strong></span>
+        </div>
+
+        <div class="mobile-actions">
+            <button class="mobile-action-btn" aria-label="Notificações">🔔</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filters-section">
+            <h2 class="section-title">O que você está procurando?</h2>
+            <div class="filter-pills">
+                <button class="pill active">Todos</button>
+                <button class="pill">Cachorro</button>
+                <button class="pill">Gatos</button>
+                <button class="pill alert-pill">Perdido</button>
+                <button class="pill success-pill">Encontrado</button>
+                <button class="pill warning-pill">Abandonado</button>
+                <button class="pill">Adotado</button>
+                <button class="pill">Arquivado</button>
+            </div>
+        </section>
+
+        <section class="cards-mural">
+            
+            <div class="pet-card">
+                <div class="pet-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600" alt="Cachorro">
+                    <span class="badge badge-danger">Perdido</span>
+                </div>
+                <div class="pet-info-content">
+                    <div class="pet-text-header">
+                        <h3>Caramelo</h3>
+                        <p class="pet-detail">🐶 Cachorro • Macho</p>
+                        <p class="pet-location">📍 Centro, Nova Londrina - PR</p>
+                    </div>
+                    <button class="btn-card">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="pet-card">
+                <div class="pet-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=600" alt="Gato">
+                    <span class="badge badge-success">Encontrado</span>
+                </div>
+                <div class="pet-info-content">
+                    <div class="pet-text-header">
+                        <h3>Frajola</h3>
+                        <p class="pet-detail">🐱 Gato • Fêmea</p>
+                        <p class="pet-location">📍 Bairro Boa Vista</p>
+                    </div>
+                    <button class="btn-card">Ver Detalhes</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

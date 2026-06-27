@@ -1,0 +1,133 @@
+/* ==========================================================================
+   ETAPA 3: NAVBAR VERSÃO DESKTOP (MAIS FINA E COMPACTA)
+   ========================================================================== */
+.navbar-desktop {
+    background-color: var(--white);
+    /* Diminuído o padding vertical de 16px para 8px para ficar bem fina */
+    padding: var(--spacing-sm) calc(var(--spacing-lg) * 2); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-md); /* Reduzido o espaço entre os botões */
+}
+
+/* Transformado os links em "balõezinhos" azuis */
+.nav-item {
+    text-decoration: none;
+    color: var(--primary); /* Texto em azul por padrão */
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 6px 16px; /* Ajuste interno do balãozinho */
+    border-radius: 20px; /* Deixa as bordas bem arredondadas como um balão */
+    border: 1px solid var(--primary); /* Borda azul em volta */
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+/* Efeito quando passa o mouse (Hover) ou quando o botão está Ativo */
+.nav-item:hover, .nav-item.active {
+    background-color: var(--primary) !important; /* Preenche o balão de azul */
+    color: var(--white) !important; /* Texto fica branco */
+    border-color: var(--primary) !important;
+}
+
+/* ==========================================================================
+   ETAPA 4: LOGO TRIANGULAR COMPACTO
+   ========================================================================== */
+.logo-triangulo-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: transparent;
+}
+
+/* Reduzido o tamanho do escudo do logo de 65px para 50px */
+.logo-shield {
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-shield::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background: var(--white);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 1;
+}
+
+/* Reduzido o tamanho do ícone da patinha */
+.paw-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.paw-pad {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 9px;
+    background-color: var(--primary-dark);
+    border-radius: 50% 50% 40% 40%;
+}
+
+.toe {
+    position: absolute;
+    background-color: var(--primary-dark);
+    border-radius: 50%;
+    width: 5px;
+    height: 6px;
+}
+
+.toe-1 { top: 3px; left: 1px; transform: rotate(-20deg); }
+.toe-2 { top: 0px; left: 7px; }
+.toe-3 { top: 0px; right: 7px; }
+.toe-4 { top: 3px; right: 1px; transform: rotate(20deg); }
+
+.logo-text-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 1.4rem; /* Diminuído levemente a fonte */
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1.1;
+}
+
+.brand-name .dark-blue {
+    font-weight: 800;
+    color: var(--primary-dark);
+}
+
+.brand-sub {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary);
+    margin-top: 1px;
+}
